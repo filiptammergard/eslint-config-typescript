@@ -9,8 +9,8 @@ dependencies:
     specifier: 2.1.2
     version: 2.1.2
   '@tammergard/eslint-config-base':
-    specifier: 5.0.5
-    version: 5.0.5(@typescript-eslint/parser@6.9.0)(eslint@8.52.0)(prettier@3.0.3)
+    specifier: 5.0.6
+    version: 5.0.6(@typescript-eslint/parser@6.9.0)(eslint@8.52.0)(prettier@3.0.3)
   '@typescript-eslint/eslint-plugin':
     specifier: 6.9.0
     version: 6.9.0(@typescript-eslint/parser@6.9.0)(eslint@8.52.0)(typescript@5.2.2)
@@ -359,8 +359,8 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@tammergard/eslint-config-base@5.0.5(@typescript-eslint/parser@6.9.0)(eslint@8.52.0)(prettier@3.0.3):
-    resolution: {integrity: sha512-+CPxebJDzGtwYy75QIsw6yOw88IcqhC1LLoZmf0hkNtXGGBEazkBKx+fLPndThwxwYh4TV62E3Parx2W+3Yzvw==}
+  /@tammergard/eslint-config-base@5.0.6(@typescript-eslint/parser@6.9.0)(eslint@8.52.0)(prettier@3.0.3):
+    resolution: {integrity: sha512-lgRVpDClUcT0cFK4hfmqnOZRwoRK2DGoCy0gtrAlQDPS7WH7K44KKmf1I3OmLUR5V2oOWMUJS2HOWB6AaK+Xxw==}
     peerDependencies:
       eslint: '>=8.52.0'
       prettier: '>=3.0.3'
