@@ -1,0 +1,55 @@
+{
+	"name": "@tammergard/eslint-config-typescript",
+	"version": "5.0.1",
+	"description": "A sharable ESLint config for TypeScript with personal preferences",
+	"scripts": {
+		"format": "prettier --write .",
+		"format-check": "prettier --check .",
+		"release": "pnpm changeset publish",
+		"review": "pnpm install --frozen-lockfile && pnpm format-check"
+	},
+	"dependencies": {
+		"@eslint/eslintrc": "2.1.2",
+		"@tammergard/eslint-config-base": "5.0.5",
+		"@typescript-eslint/eslint-plugin": "6.9.0",
+		"@typescript-eslint/parser": "6.9.0"
+	},
+	"devDependencies": {
+		"@changesets/cli": "2.26.2",
+		"@tammergard/prettier-config": "2.1.0",
+		"prettier": "3.0.3"
+	},
+	"peerDependencies": {
+		"eslint": ">=8.52.0",
+		"prettier": ">=3.0.3"
+	},
+	"files": [
+		"index.js"
+	],
+	"main": "index.js",
+	"keywords": [
+		"eslint",
+		"config",
+		"eslint-config",
+		"styleguide",
+		"typescript"
+	],
+	"homepage": "https://github.com/filiptammergard/eslint-config-typescript#readme",
+	"bugs": {
+		"url": "https://github.com/filiptammergard/eslint-config-typescript/issues"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Filip Tammergård",
+		"email": "filip+npm@tammergard.se",
+		"url": "https://tammergard.se"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/filiptammergard/eslint-config-typescript.git"
+	},
+	"publishConfig": {
+		"access": "public",
+		"provenance": true
+	}
+}
