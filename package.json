@@ -9,7 +9,7 @@
 		"review": "pnpm install --frozen-lockfile && pnpm format-check"
 	},
 	"dependencies": {
-		"@eslint/eslintrc": "2.1.4",
+		"@eslint/eslintrc": "3.0.0",
 		"@tammergard/eslint-config-base": "5.0.6",
 		"@typescript-eslint/eslint-plugin": "6.16.0",
 		"@typescript-eslint/parser": "6.16.0"
