@@ -1,32 +1,34 @@
 # @tammergard/eslint-config-typescript
 
-A sharable ESLint config for TypeScript with personal preferences.
+A sharable ESLint config for TypeScript with personal preferences. Ships as a
+flat config for ESLint 10.
+
+## Requirements
+
+- Node.js >= 24
+- ESLint >= 10
+- TypeScript >= 4.8.4 < 6.1.0
 
 ## Installation
 
-Install this ESLint config as a dev dependency:
+Install this ESLint config and its peer dependencies as dev dependencies:
 
 ```bash
 # npm
-npm install @tammergard/eslint-config-typescript --save-dev
-
-# yarn
-yarn add @tammergard/eslint-config-typescript --dev
+npm install --save-dev @tammergard/eslint-config-typescript eslint typescript
 
 # pnpm
-pnpm add @tammergard/eslint-config-typescript --save-dev
+pnpm add -D @tammergard/eslint-config-typescript eslint typescript
 ```
-
-Then also install all peer dependencies.
 
 ## Usage
 
 Add the config to your `eslint.config.js` file:
 
 ```js
-const tammergardTypeScriptConfig = require("@tammergard/eslint-config-typescript")
+import tammergardTypeScriptConfig from "@tammergard/eslint-config-typescript"
 
-module.exports = [...tammergardTypeScriptConfig]
+export default [...tammergardTypeScriptConfig]
 ```
 
 ## License

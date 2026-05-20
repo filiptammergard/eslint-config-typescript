@@ -1,31 +1,23 @@
-const { FlatCompat } = require("@eslint/eslintrc")
-const typescriptParser = require("@typescript-eslint/parser")
-const tammergardBaseConfig = require("@tammergard/eslint-config-base")
+import tammergardBaseConfig from "@tammergard/eslint-config-base"
+import tseslint from "typescript-eslint"
 
-const compat = new FlatCompat({
-	baseDirectory: __dirname,
-})
-
-module.exports = [
-	...compat.extends(
-		"plugin:@typescript-eslint/eslint-plugin/recommended-type-checked",
-	),
-	...compat.extends(
-		"plugin:@typescript-eslint/eslint-plugin/stylistic-type-checked",
-	),
+export default tseslint.config(
+	...tseslint.configs.recommendedTypeChecked,
+	...tseslint.configs.stylisticTypeChecked,
 	...tammergardBaseConfig,
 	{
+		name: "tammergard/typescript/rules",
 		rules: {
 			"@typescript-eslint/array-type": ["error", { default: "generic" }],
 			"@typescript-eslint/explicit-module-boundary-types": "off",
 		},
 	},
 	{
+		name: "tammergard/typescript/language-options",
 		languageOptions: {
-			parser: typescriptParser,
 			parserOptions: {
-				project: true,
+				projectService: true,
 			},
 		},
 	},
-]
+)
