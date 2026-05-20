@@ -1,6 +1,6 @@
 {
 	"name": "@tammergard/eslint-config-typescript",
-	"version": "1.0.0",
+	"version": "6.0.0",
 	"description": "A sharable ESLint config for TypeScript with personal preferences",
 	"type": "module",
 	"main": "index.js",
