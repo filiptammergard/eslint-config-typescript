@@ -9,13 +9,13 @@ importers:
   .:
     dependencies:
       '@tammergard/eslint-config-base':
-        specifier: ^6.0.0
-        version: 6.0.0(eslint@10.4.0)
+        specifier: ^6.1.0
+        version: 6.1.0(eslint@10.4.0)
       eslint:
         specifier: '>=10.0.0'
         version: 10.4.0
       typescript:
-        specifier: '>=4.8.4 <6.1.0'
+        specifier: '>=4.8.4'
         version: 6.0.3
       typescript-eslint:
         specifier: ^8.59.4
@@ -178,8 +178,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@tammergard/eslint-config-base@6.0.0':
-    resolution: {integrity: sha512-luPF/85ifIlInkOXc/Qnseljvf2hORTzjcdRbk0pBaLbFdM1/Jx5WxFJmglaJhQrbpshnEue/fAwlffVjW5TLQ==}
+  '@tammergard/eslint-config-base@6.1.0':
+    resolution: {integrity: sha512-n8rNNnDExcA36FhQciEVTYEubef0qP0F8O9RKd0xFH/VnswuR9UDDsSVede7YDix7O7/PWzha3lv+6Tg7s+YNw==}
     engines: {node: '>=24'}
     peerDependencies:
       eslint: '>=10.0.0'
@@ -992,7 +992,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.20.1
 
-  '@tammergard/eslint-config-base@6.0.0(eslint@10.4.0)':
+  '@tammergard/eslint-config-base@6.1.0(eslint@10.4.0)':
     dependencies:
       '@eslint/js': 10.0.1(eslint@10.4.0)
       eslint: 10.4.0
